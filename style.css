@@ -1,0 +1,228 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+   
+}
+.navbar {
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid grey;
+    color: white;
+    text-shadow: 3px 3px 2px rgb(117, 5, 5);
+}
+.navbar .logo {
+    padding-left: 6vw;
+    cursor: pointer;
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 1vw;
+}
+.navbar ul li {
+    padding: 0 2vw 0 2vw;
+    font-weight: 500;
+    cursor: pointer;
+}
+.navbar ul li:hover {
+    color: red;
+}
+.navbar .nav-icons {
+    padding: 1vw;
+    cursor: pointer;
+}
+.nav-icon {
+    padding-right: 3vw;
+}
+/* Hero-section Styling */
+.hero-sec {
+    width: 100%;
+    height: 90vh;
+    background-color: black;
+    color: red;
+    display: flex;
+}
+.left {
+    width: 50%;
+    height: 100%;
+    padding: 5vw;
+    padding-left: 6vw;
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+    flex-direction: column;
+}
+#buy-now{
+    width: 30%;
+    padding: 0.8vw;
+    background:transparent;
+    border: 2px solid red;
+    color: red;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 2vh;
+}
+#buy-now:hover {
+    color: white;
+    font-weight: 600;
+    background-color: red;
+    transition: all 0.1s ease-in-out;
+}
+.left p {
+    font-size: 1vw;
+}
+.right {
+    width: 50%;
+    height: 100%;
+    padding: 3vw;
+    background-color: rgb(0, 60, 9);
+    background: url(bg/bg-img01.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/* Featured Products Styling */
+.featured-products {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 10vh;
+}
+.featured-products h1 {
+    font-size: 40px;
+    text-transform: uppercase
+}
+.featured-products select {
+    display: inline;
+    width: 200px;
+}
+.selects{
+    display: flex;
+    gap: 3vw;
+    margin-top: 5vw;
+}
+select>option {
+    border-radius: none;
+    color: black;
+}
+.selects select {
+    width: 25vw;
+    border: 2px solid red;
+    color: red;
+}
+#brand, #country, .search-btn, .clear-btn {
+    background:transparent;
+    padding: 0.8vw 2vw;
+    border: 2px solid black;
+    color: black;
+    cursor: pointer;
+}
+.search-btn:hover, .clear-btn:hover{
+    color: white;
+    background-color: black;
+}
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3vw;
+    width: 100%;
+    padding: 6vw 2vw;
+}
+.card {
+    text-align: center;
+    width: 25vw;
+    height: 60vh;
+    border: 1px solid red;
+    box-shadow: 2px 3px 5px rgb(127, 1, 1);
+}
+.card-img-top {
+    width: 65%;
+    padding-top: 1vw;
+    transition: all 1s ease;
+}
+.card-img-top:hover {
+    transform: scale(1.1);
+}
+.card-body {
+    margin-top: 2vh;
+}
+.card-title {
+    font-size: 1.5vw;
+}
+.card-selected {
+    text-align: center;
+    margin-top: 10vh;
+    width: 25vw;
+    height: 60vh;
+    margin-bottom: 2vw;
+    border: 1px solid red;
+    box-shadow: 2px 3px 5px red;
+}
+.card-btn {
+    margin-top: 1vw;
+    padding: 0.3vw 2vw;
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 40px;
+    cursor: pointer;
+}
+@media (max-width: 960px) {
+    .card {
+      margin: 5vw;
+      height: 25vh;
+    }
+}
+@media (max-width: 576px) {
+    .card {
+      width: 100%;
+      margin: 10px 0;
+      margin: 5vw;
+      height: 40vh;
+    }
+    .card-img-top {
+        width: 75%;
+        padding-top: 1vw;
+        transition: all 1s ease;
+    }
+    .navbar ul {
+        display: none;
+    }
+    .hero-sec {
+        width: 100%;
+        height: 90vh;
+        background-color: black;
+        color: red;
+        display: flex;
+        flex-direction: column;
+    }
+    .left {
+        text-align: center;
+        font-size: 3vw;
+        display: flex;
+    }
+    #buy-now {
+        width: 100%;
+        text-align: center;
+    }
+    .left p{
+        font-size: 2vw;
+    }
+    .left, .right {
+        width: 100%;
+    }
+    .card-selected{
+        width: 90%;
+        margin: 5vw;
+        height: 50vh;
+    }
+}

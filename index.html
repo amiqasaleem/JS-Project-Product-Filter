@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website (Product Filter)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+     <div class="navbar">
+        <div class="logo">
+            <!-- <img src="logo.png"> -->
+            <h2>Nexus Time</h2>
+        </div>
+        <ul class="nav-items">
+            <li>Home</li>
+            <li>Shop</li>
+            <li>Models</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+        <div class="nav-icons">
+            <i class="fa-solid fa-magnifying-glass nav-icon"></i>
+            <i class="fa-regular fa-user nav-icon"></i>
+            <i class="fa-solid fa-cart-shopping nav-icon"></i>
+        </div>
+     </div>
+    <!-- Navbar ends here -->
+
+    <!-- Hero-section Starts -->
+    <div class="hero-sec">
+        <div class="left">
+            <p>Empire Collection</p>
+            <h1>Excellence in Every Tick!</h1>
+            <p>The best in class elegant watchesfrom the luxury brands. High Quality watches into which a lot of care has gone in.</p>
+            <button id="buy-now">BUY NOW</button>
+        </div>
+        <div class="right"></div>
+    </div>
+    <!-- Hero-section ends here -->
+
+    <!-- Cards section starts here -->
+    <div class="featured-products">
+        <h1>Featured Products</h1>
+        <div class="selects">
+            <select name="brand" id="brand" onchange="setCountry()"></select>
+            <select name="country" id="country"></select>
+
+            <button class="search-btn" onclick="searchProduct()">Search</button>
+            <button class="clear-btn" onclick="clearProduct()">Clear</button>
+        </div>
+        
+        <div id="main" class="myCard"></div>
+        <div id="selectedCard"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
